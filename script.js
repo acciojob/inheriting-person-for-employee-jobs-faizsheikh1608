@@ -1,23 +1,23 @@
 // complete this js code
 class Person{
 	constructor(name,age){
-		this._name = name;
-		this._age = age;
+		this.name = name;
+		this.age = age;
 	}
 
 	greet(){
-		console.log("Hello, my name is " + this._name + ", I am" + this._age + "years old.")
+		console.log("Hello, my name is " + this.name + ", I am" + this.age + "years old.")
 	}
 }
 
 class Employee extends Person{
 	constructor(name,age,jobTittle){
 		super(name,age);
-		this._jobTittle = jobTittle;
+		this.jobTittle = jobTittle;
 	}
 
 	jobGreet(){
-		console.log('Hello, my name is ' + this._name + ", I am " + this._age + " years old, and my job tittle is " + this._jobTittle);
+		console.log('Hello, my name is ' + this.name + ", I am " + this.age + " years old, and my job tittle is " + this.jobTittle);
 	}
 }
 
