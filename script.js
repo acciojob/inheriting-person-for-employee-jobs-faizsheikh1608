@@ -5,7 +5,7 @@ class Person {
   }
 
   greet() {
-    console.log("Hello, my name is " + this.name + ", I am " + this.age + " years old.");
+    return "Hello, my name is " + this.name + ", I am " + this.age + " years old.";
   }
 }
 
@@ -16,10 +16,9 @@ class Employee extends Person {
   }
 
   jobGreet() {
-    console.log("Hello, my name is " + this.name + ", I am " + this.age + " years old, and my job title is " + this.jobTitle + ".");
+    return "Hello, my name is " + this.name + ", I am " + this.age + " years old, and my job title is " + this.jobTitle + ".";
   }
 }
-
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
